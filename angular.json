@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "moduurn": {
@@ -107,9 +107,10 @@
           }
         },
         "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
+          "builder": "@nrwl/cypress:cypress",
           "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
+            "cypressConfig": "e2e/cypress.json",
+            "tsConfig": "e2e/tsconfig.e2e.json",
             "devServerTarget": "moduurn:serve"
           },
           "configurations": {
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "moduurn"
+    }
+  },
+  "defaultProject": "moduurn",
+  "cli": {
+    "analytics": "5f44edee-2fef-450c-8d6e-a20d38081098"
+  }
 }

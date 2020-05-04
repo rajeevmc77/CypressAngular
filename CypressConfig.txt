@@ -1,0 +1,12 @@
+https://youtu.be/UIlknGqAoiE 
+
+https://medium.com/@joaqcid/5-steps-to-set-cypress-as-your-e2e-test-runner-in-angular-bbaf63619a1b
+
+possible issues review url
+
+https://github.com/cypress-io/cypress/issues/2610
+
+npm i cypress
+cypress open
+
+./node_modules/.bin/cypress install
