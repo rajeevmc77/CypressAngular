@@ -7,5 +7,7 @@
     "video": true,
     "videosFolder": "../../dist/cypress/{your-project}-e2e/videos",
     "screenshotsFolder": "../../dist/cypress/{your-project}-e2e/screenshots",
-    "chromeWebSecurity": false
+    "chromeWebSecurity": false,
+    "waitForAnimations": false,
+    "animationDistanceThreshold": 50
 }

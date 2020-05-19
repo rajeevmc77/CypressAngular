@@ -1,0 +1,68 @@
+
+chunk {main} main.js, main.js.map (main) 11.7 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 141 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.15 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 9.72 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 2.99 MB [initial] [rendered]
+Date: 2020-05-06T05:05:42.947Z - Hash: 61102a33f3feb3292dca - Time: 13137ms
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+: Compiled successfully.
+
+==================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:    4.5.0                                                                              │
+  │ Browser:    Electron 80                                                                        │
+  │ Specs:      1 found (app.spec.ts)                                                              │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  app.spec.ts                                                                     (1 of 1)
+Starting type checking service...
+Using 1 worker with 2048MB memory limit
+
+
+  Check Samagra Site
+    ✓ Open Samagra App (1968ms)
+
+
+  1 passing (4s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     3 seconds                                                                        │
+  │ Spec Ran:     app.spec.ts                                                                      │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Video)
+
+  -  Started processing:  Compressing to 32 CRF                                                     
+  -  Finished processing: /rajeev/AOT/Automation Testing Cypres/dist/cypress/{your-pr    (3 seconds)
+                          oject}-e2e/videos/app.spec.ts.mp4                                         
+
+
+==================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  app.spec.ts                              00:03        1        1        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✔  All specs passed!                        00:03        1        1        -        -        -  
+
