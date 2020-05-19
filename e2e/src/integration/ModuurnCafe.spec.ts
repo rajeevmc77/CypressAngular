@@ -1,5 +1,5 @@
-import { getGreeting , checkIfEleExists } from '../support/app.po';
-
+// import { getGreeting , checkIfEleExists } from '../support/app.po';
+import { checkIfEleExists } from '../support/app.po';
 // describe('Load Test App', () => {
 //   beforeEach(() => cy.visit('/'));
 
@@ -15,8 +15,6 @@ describe('Check Samagra Site', function () {
   // tslint:disable-next-line: only-arrow-functions
   it('Open Samagra App', function () {
     cy.visit('https://moduurncafe.moduurn.ca/confirm', { failOnStatusCode: false });
-    cy.viewport(1366, 572);
-    cy.visit('https://moduurncafe.moduurn.ca/confirm', { failOnStatusCode: false });
     // const cyObj = cy.get('.cards > .row > .col-sm-12 > div > .btn-wide');
     // cy.get('body').then($body => {
     //   const cypressObj = Cypress.$('.cards > .row > .col-sm-12 > div > .btn-wide');
@@ -27,9 +25,27 @@ describe('Check Samagra Site', function () {
     //   }
     // });
     // cy.get('.cards > .row > .col-sm-12 > div > .btn-wide').click();
+    // checkIfEleExists('.cards > .row > .col-sm-12 > div > .btn-wide')
+    // .then(resp => {
+    //   cy.get('.cards > .row > .col-sm-12 > div > .btn-wide').click();
+    //   checkIfEleExists('.btn-wide')
+    //   .then(resp => { cy.get('.btn-wide')
+    //   .click(); })
+    //   .catch(err => { console.log(' Failed to Find body > modal-container > div > div > landing-page > div > div.modal-body > div > div > div > div > div.landing-footer.col-sm-12 > button'); });
+
+    // })
+    // .catch(err => { console.log(' Failed to Find .cards > .row > .col-sm-12 > div > .btn-wide'); });
+
     checkIfEleExists('.cards > .row > .col-sm-12 > div > .btn-wide')
-    .then(resp => { console.log(' Found .cards > .row > .col-sm-12 > div > .btn-wide'); })
-    .catch(err => { console.log(' Failed to Find .cards > .row > .col-sm-12 > div > .btn-wide');});
+    .then(r => {
+      cy.get('.cards > .row > .col-sm-12 > div > .btn-wide').click();
+    });
+
+    checkIfEleExists('modal-container > div > div > landing-page > div > div.modal-body > div > div > div > div > div.landing-footer.col-sm-12 > button')
+    .then( r => {
+      cy.get('modal-container > div > div > landing-page > div > div.modal-body > div > div > div > div > div.landing-footer.col-sm-12 > button').click();
+    });
+
     // cy.get('.modal-content > landing-page > .landing-page > .modal-header > .fa').click();
     // cy.get('.container > #navbarSupportedContent > #navBarContent > .nav-item > .btn-theme').click();
     // cy.get('.modal-body > .col-md-12 > .ng-untouched > .row:nth-child(1) > .form-control').click();
